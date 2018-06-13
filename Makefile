@@ -8,7 +8,7 @@ CC = g++
 CPP_FLAGS = -Wall -pedantic -std=c++11 -I$(INC_DIR)
 AR = ar
 
-all: makedir mbasic.a mbasic.so
+all: mbasic.a mbasic.so
 
 mbasic.a: $(SRC_DIR)/MathBasic.cpp $(INC_DIR)/MathBasic.h
 	$(CC) $(CPP_FLAGS) -c $(SRC_DIR)/MathBasic.cpp -o $(OBJ_DIR)/MathBasic.o
@@ -18,7 +18,7 @@ mbasic.so: $(SRC_DIR)/MathBasic.cpp $(INC_DIR)/MathBasic.h
 	$(CC) $(CPP_FLAGS) -c $(SRC_DIR)/MathBasic.cpp -o $(OBJ_DIR)/MathBasic.o 
 	$(CC) -shared -fPIC -o $(LIB_DIR)/$@ $(OBJ_DIR)/MathBasic.o
 
-makedir:
+dir:
 	mkdir bin build lib
 
 clean:
