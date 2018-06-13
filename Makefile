@@ -18,5 +18,5 @@ mbasic.so: $(SRC_DIR)/MathBasic.cpp $(INC_DIR)/MathBasic.h
 	$(CC) $(CPP_FLAGS) -c $(SRC_DIR)/MathBasic.cpp -o $(OBJ_DIR)/MathBasic.o 
 	$(CC) -shared -fPIC -o $(LIB_DIR)/$@ $(OBJ_DIR)/MathBasic.o
 
-clear:
+clean:
 	rm $(OBJ_DIR)/* $(BIN_DIR)/* $(LIB_DIR)/*
