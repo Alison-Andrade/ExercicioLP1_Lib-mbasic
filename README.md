@@ -1,1 +1,0 @@
-# ExercicioLP1_Lib-mbasic
