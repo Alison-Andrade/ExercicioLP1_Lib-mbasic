@@ -1,1 +1,1 @@
-# ExercicioLP1_Lib-mbasic
+# LP1-Laboratorio6
